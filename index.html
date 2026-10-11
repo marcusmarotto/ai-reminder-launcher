@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Reminder Launcher</title>
+  <meta name="referrer" content="no-referrer">
+  <style>body{font:16px system-ui,sans-serif;max-width:34rem;margin:12vh auto;padding:0 1.5rem;line-height:1.5}a{display:inline-block;background:#222;color:white;padding:.8rem 1.2rem;border-radius:.6rem;text-decoration:none}small{color:#555}</style>
+</head>
+<body>
+  <h1>AI Reminder</h1>
+  <p>Attempting to open your installed Apple Shortcut.</p>
+  <p><a id="launch" href="shortcuts://run-shortcut?name=AI_Reminder">Run AI_Reminder</a></p>
+  <small>If nothing happens, select the button above. This test sends no reminder data.</small>
+  <script>
+    const shortcutURL = 'shortcuts://run-shortcut?name=AI_Reminder';
+    document.getElementById('launch').href = shortcutURL;
+    window.location.href = shortcutURL;
+  </script>
+</body>
+</html>
